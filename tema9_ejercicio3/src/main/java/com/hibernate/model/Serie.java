@@ -35,6 +35,14 @@ public class Serie {
 		this.capitulos = capitulos;
 	}
 
+	public Serie(int id, String nombre, int temporadas, int capitulos) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.temporadas = temporadas;
+		this.capitulos = capitulos;
+	}
+
 	public int getId() {
 		return id;
 	}

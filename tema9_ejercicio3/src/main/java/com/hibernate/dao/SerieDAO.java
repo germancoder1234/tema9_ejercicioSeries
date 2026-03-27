@@ -9,7 +9,7 @@ import com.hibernate.model.Serie;
 import com.hibernate.util.HibernateUtil;
 
 public class SerieDAO {
-	public void insertPersona(Serie s) {
+	public void insertSerie(Serie s) {
 		Transaction transaction = null;
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 			transaction = session.beginTransaction();
@@ -23,7 +23,7 @@ public class SerieDAO {
 		}
 	}
 
-	public void updatePersona(Serie s) {
+	public void updateSerie(Serie s) {
 		Transaction transaction = null;
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 			transaction = session.beginTransaction();
@@ -38,7 +38,7 @@ public class SerieDAO {
 
 	}
 
-	public void deletePersona(int id) {
+	public void deleteSerie(int id) {
 		Transaction transaction = null;
 		Serie s=null;
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
@@ -55,7 +55,7 @@ public class SerieDAO {
 
 	}
 
-	public Serie selectPersonaById(int id) {
+	public Serie selectSerieById(int id) {
 		Transaction transaction = null;
 		Serie s = null;
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
